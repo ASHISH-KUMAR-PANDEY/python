@@ -7,3 +7,6 @@ i = 0
     ve = ve * (ashish+1)
 while i < ashish+1:
         print(ho)
+if not (i == ashish):
+            print(ve)
+        i += 1
