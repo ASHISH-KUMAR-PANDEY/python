@@ -5,3 +5,5 @@ i = 0
     ve = "|   "
     ho = ho * ashish
     ve = ve * (ashish+1)
+while i < ashish+1:
+        print(ho)
