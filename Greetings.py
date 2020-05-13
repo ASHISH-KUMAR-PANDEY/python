@@ -5,3 +5,5 @@ GUEST_LIST = {
 	"Norman": "England", 
 	"Sam": "Argentina"
 }
+def greeting(name):
+	if name in GUEST_LIST:
