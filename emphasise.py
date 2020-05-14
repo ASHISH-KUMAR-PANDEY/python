@@ -6,3 +6,5 @@ def emphasise(string):
 		elif string[i - 1] != " ":
 			s += string[i].lower() 
 		else:
+			s += string[i].upper()
+	return s
