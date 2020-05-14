@@ -4,3 +4,5 @@ def emphasise(string):
 		if i == 0:
 			s += string[i].upper()
 		elif string[i - 1] != " ":
+			s += string[i].lower() 
+		else:
