@@ -8,10 +8,6 @@ def knapSack(W, wt, val, n):
             val[n-1] + knapSack( 
                 W-wt[n-1], wt, val, n-1),  
                 knapSack(W, wt, val, n-1)) 
-  
-# end of function knapSack 
-  
-# To test above function 
 val = [60, 100, 120] 
 wt = [10, 20, 30] 
 W = 50
