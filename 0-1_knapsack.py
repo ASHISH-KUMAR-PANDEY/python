@@ -3,10 +3,6 @@ def knapSack(W, wt, val, n):
         return 0
     if (wt[n-1] > W): 
         return knapSack(W, wt, val, n-1) 
-  
-    # return the maximum of two cases: 
-    # (1) nth item included 
-    # (2) not included 
     else: 
         return max( 
             val[n-1] + knapSack( 
