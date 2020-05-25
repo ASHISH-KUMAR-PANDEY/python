@@ -10,7 +10,6 @@ def truncatable(n):
 			else:
 				t_l = [int(n[-i:]) for i in range(1,len(n))]
 				t_r = [int(n[:i]) for i in range(1,len(n))]
-				
 				if all(is_prime(n) for n in t_l):
 					res.append('left')
 				if all(is_prime(n) for n in t_r):
