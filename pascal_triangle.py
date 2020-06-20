@@ -6,10 +6,7 @@ def printPascal(n) :
             print(binomialCoeff(line, i), 
                 " ", end = "") 
         print() 
-      
-  
-# See https://www.geeksforgeeks.org/space-and-time-efficient-binomial-coefficient/ 
-# for details of this function 
+
 def binomialCoeff(n, k) : 
     res = 1
     if (k > n - k) : 
