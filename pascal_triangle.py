@@ -16,7 +16,6 @@ def binomialCoeff(n, k) :
         res = res // (i + 1) 
       
     return res 
-  
-# Driver program 
+
 n = 7
 printPascal(n) 
