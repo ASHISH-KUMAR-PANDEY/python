@@ -1,7 +1,5 @@
 def printPascal(n) : 
-      
-    # Iterate through every line  
-    # and print entries in it 
+
     for line in range(0, n) : 
           
         # Every line has number of  
