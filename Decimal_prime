@@ -1,0 +1,20 @@
+def is_prime(n):
+    if n < 2:
+        return False
+    for i in range(2, int(n**0.5) + 1):
+        if not n%i:
+            return False
+    return True
+
+def extract_primes(n):
+    s = str(n)
+    
+    primes = []
+    for i in range(len(s) + 1):
+        for j in range(i + 1, len(s) + 1):
+            group = s[i:j]
+            if group[0] != '0' and is_prime(int(group)):
+                primes.append(int(group))
+    
+    primes.sort()
+    return primes
