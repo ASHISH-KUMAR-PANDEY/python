@@ -1,0 +1,18 @@
+from typing import List, Union
+
+
+def freq_count_r(lst:List[Union[List, int]], el:int, d:dict, lvl:int)->dict:
+    for v in lst:
+        if type(v) == list:
+            freq_count_r(v, el, d, lvl+1)
+        else:
+            if v == el:
+                d[lvl] = 1 + d.get(lvl,0)
+
+    if d.get(lvl, None) is None: d[lvl] = 0
+
+
+def freq_count(lst:List[Union[List, int]], el:int)->List[List[int]]:
+    d, lvl = {}, 0
+    freq_count_r(lst, el, d, lvl)
+    return sorted([[k,v] for k,v in d.items()], key=lambda x: x[0])
